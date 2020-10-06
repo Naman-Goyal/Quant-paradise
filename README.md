@@ -1,4 +1,4 @@
-# COMS4995
+# QUANT PARADISE 
 ![GitHub](https://img.shields.io/github/license/Naman-Goyal/COMS4995?style=flat-square)
 project proposal
 
