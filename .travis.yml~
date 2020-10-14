@@ -8,7 +8,7 @@ install:
   - echo "no dependencies"
 
 script:
-  - pytest VR/
+  - python -m pytest -vvv VR/
 
 branches:
   only:
