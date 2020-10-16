@@ -9,6 +9,9 @@ install:
 
 script:
   - pytest VR/test_auth.py/
+  - pytest --cov=./
+after_success:
+        - bash <(curl -s https://codecov.io/bash)
 
 branches:
   only:
