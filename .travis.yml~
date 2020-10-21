@@ -1,0 +1,21 @@
+
+language: python
+python:
+  - 3.7
+cache: pypi
+
+install:
+  - echo "no dependencies"
+
+script:
+  - pytest VR/test_auth.py/
+  
+after_success:
+        - bash <(curl -s https://codecov.io/bash)
+        - cat codecov.yml | curl --data-binary @- https://codecov.io/validate
+
+branches:
+  only:
+  - master
+
+
