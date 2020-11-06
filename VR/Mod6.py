@@ -4,7 +4,7 @@ import numpy as np
 def zero_coupon(tau, r0, kappa, theta, sigma, model):
     ''' Calculates the zero-coupon price based on the Vasicek/CIR model
         using the parameters provided
-    
+
     :param tau:
     :type tau:
     :param r0:
@@ -47,8 +47,9 @@ def zero_coupon(tau, r0, kappa, theta, sigma, model):
     return p
 
 
-def swapRates(tau, p, mat):  
-    '''Computes interpolated values for the swap rates using the parameters provided
+def swapRates(tau, p, mat):
+    '''Computes interpolated values for the swap
+    rates using the parameters provided
     :param tau:
     :type tau:
     :param p:
@@ -76,8 +77,9 @@ def swapRates(tau, p, mat):
 
 
 def liborRates(tau, p, mat):
-    '''Computes interpolated values of the libor rates between the given extreme values
-    
+    '''Computes interpolated values of the libor
+     rates between the given extreme values
+
     :param tau:
     :type tau:
     :param p:
@@ -93,9 +95,9 @@ def liborRates(tau, p, mat):
 
 
 def objFunc1(params, tau, LIBOR, SWAP, model):
-    '''Utilizes a gradient-based approach to reduce the difference between 
+    '''Utilizes a gradient-based approach to reduce the difference between
        the model values and the actual values to tune the parameters
-    
+
     :param params:
     :type params:
     :param tau:
