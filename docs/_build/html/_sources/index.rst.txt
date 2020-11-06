@@ -9,6 +9,8 @@ Welcome to Quant Paradise's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   
+   modules
 
 
 
