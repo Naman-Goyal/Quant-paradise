@@ -1,7 +1,9 @@
-__pycache__
-*.pyc
-.coverage
-
 docs/_build
 docs/_static
 docs/_templates
+./_build
+./_static
+./_templates
+__pycache__
+*.pyc
+.coverage
