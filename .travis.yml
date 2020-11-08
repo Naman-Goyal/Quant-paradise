@@ -9,7 +9,7 @@ install:
 
 
 script:
-  - flake8 pricingFIP
+  - flake8
   - coverage run -m pytest 
 
 after_success:
