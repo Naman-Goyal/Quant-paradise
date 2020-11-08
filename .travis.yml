@@ -9,7 +9,7 @@ install:
 
 
 script:
-  - flake8 pricingFIP/Vaeick_CIR
+  - flake8 pricingFIP
   - coverage run -m pytest 
 
 after_success:
