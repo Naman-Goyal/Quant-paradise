@@ -1,5 +1,6 @@
 #from PricingFIP.Vaeick_CIR import Mod6 as md
-import PricingFIP.Vaeick_CIR.Mod6 as md 
+import PricingFIP.Vaeick_CIR.Mod6 as md
+
 
 def test_first():
 
