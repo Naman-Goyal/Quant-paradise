@@ -1,8 +1,5 @@
-import Mod6 as md
-
-# class TestClass:
-
-
+#from ...Vaeick_CIR import Mod6 as md
+from PricingFIP.Vaeick_CIR import Mod6 as md
 def test_first():
 
     assert md.zero_coupon(1, 2, 3, 4, 5, model="abcd") == -1

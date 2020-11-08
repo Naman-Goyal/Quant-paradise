@@ -28,7 +28,7 @@ def zero_coupon(tau, r0, kappa, theta, sigma, model):
         tmp1 = kappa * tau / 2
         tmp2 = g * tau / 2
 
-        A = tmp * np.log(np.exp(tmp1) / (np.cosh(tmp2) +
+        A = tmp * np.log(np.exp(tmp1) / (np.cosh(tmp2) + 
                                          (kappa / g) * np.sinh(tmp2)))
         # B = 2. / (kappa + g * (1. / np.tanh(g * tau / 2)))
         tanh = np.tanh(g * tau / 2)
@@ -58,7 +58,7 @@ def swapRates(tau, p, mat):
     :type mat:
     '''
     if len(tau) == 1:
-        return - 1
+        return -1
     tmax = mat[-1]
 
     ttemp = np.arange(0.5, tmax + 0.5, 0.5)
@@ -88,7 +88,7 @@ def liborRates(tau, p, mat):
     :type mat:
     '''
     if len(tau) == 1:
-        return - 1
+        return -1
     pmat = np.interp(mat, tau, p)
     L = 100 * (1. / pmat - 1) / mat
     return L
@@ -115,9 +115,9 @@ def objFunc1(params, tau, LIBOR, SWAP, model):
     theta = params[2]
     sigma = params[3]
     if r0 < 0:
-        return - 1
+        return -1
     if sigma < 0:
-        return - 2
+        return -2
     p = zero_coupon(tau, r0, kappa, theta, sigma, model)
     # now that we have zero-coupon bond prices p(t,T)
     # now it is time to calculate MODEL LIBOR rates and SWAP rates
