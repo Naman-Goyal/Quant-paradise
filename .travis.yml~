@@ -9,6 +9,7 @@ install:
 
 
 script:
+  - flake8 pricingFIP
   - coverage run -m pytest 
 
 after_success:
@@ -16,4 +17,3 @@ after_success:
 branches:
   only:
   - master
-  - f3

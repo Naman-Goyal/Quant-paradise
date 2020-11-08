@@ -28,7 +28,7 @@ def zero_coupon(tau, r0, kappa, theta, sigma, model):
         tmp1 = kappa * tau / 2
         tmp2 = g * tau / 2
 
-        A = tmp * np.log(np.exp(tmp1) / (np.cosh(tmp2) + 
+        A = tmp * np.log(np.exp(tmp1) / (np.cosh(tmp2) +
                                          (kappa / g) * np.sinh(tmp2)))
         # B = 2. / (kappa + g * (1. / np.tanh(g * tau / 2)))
         tanh = np.tanh(g * tau / 2)
