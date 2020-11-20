@@ -1,12 +1,13 @@
-from Mod6 import*
 from os.path import dirname as dir
 from sys import path
 from sys import path
 import os
 import sys
-
 path.append(dir(path[0])[0:dir(path[0]).rfind('\\')] + r'\Vaeick_CIR')
-path.append('/home/travis/build/Naman-Goyal/Quant-paradise/PricingFIP/' + 'Vaeick_CIR')
+path.append(
+    '/home/travis/build/Naman-Goyal/Quant-paradise/PricingFIP/' +
+    'Vaeick_CIR')
+from Mod6 import *
 
 
 def test_first():
