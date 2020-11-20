@@ -1,13 +1,5 @@
 
-import test_auth
-import os
-import sys
-
 import numpy as np
-
-sys.path.append("my_tests")
-sys.path.append("PricingFIP")
-sys.path.append("tests")
 
 
 def zero_coupon(tau, r0, kappa, theta, sigma, model):
