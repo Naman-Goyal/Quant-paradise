@@ -1,26 +1,32 @@
-#from PricingFIP.Vaeick_CIR import Mod6 as md
-#import PricingFIP.Vaeick_CIR.Mod6 as md 
+from os.path import dirname as dir
+from sys import path
+
+# print(dir(path[0])[: dir(path[0]).rfind('\\')  ])
+path.append(dir(path[0])[0:dir(path[0]).rfind('\\')])
+
+from Vaeick_CIR.Mod6 import*
+
 
 def test_first():
 
-    assert md.zero_coupon(1, 2, 3, 4, 5, model="abcd") == -1
+    assert zero_coupon(1, 2, 3, 4, 5, model="abcd") == -1
 
 
 def test_second():
 
-    assert md.swapRates([1], 2, 3) == -1
+    assert swapRates([1], 2, 3) == -1
 
 
 def test_third():
 
-    assert md.liborRates([1], 2, 3) == -1
+    assert liborRates([1], 2, 3) == -1
 
 
 def test_fourth():
 
-    assert md.objFunc1([1, 2, 3, -8], 5, 6, 2, model="abcd") == -2
+    assert objFunc1([1, 2, 3, -8], 5, 6, 2, model="abcd") == -2
 
 
 def test_fifth():
 
-    assert md.objFunc1([-1, 2, 3, 4], 2, 3, 4, model="ac") == -1
+    assert objFunc1([-1, 2, 3, 4], 2, 3, 4, model="ac") == -1
