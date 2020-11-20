@@ -1,8 +1,8 @@
 from os.path import dirname as dir
 from sys import path
 
-# print(dir(path[0])[: dir(path[0]).rfind('\\')  ])
-path.append(dir(path[0])[0:dir(path[0]).rfind('\\')])
+print(dir(path[0])[: dir(path[0]).rfind('\\')  ])
+path.append(dir(path[0])[0:dir(path[0]).rfind('\\')] + "\Vaeick_CIR")
 
 from Vaeick_CIR.Mod6 import*
 
