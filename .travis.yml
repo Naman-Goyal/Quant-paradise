@@ -9,7 +9,7 @@ install:
 
 
 script:
-  - flake8
+  - flake8 --exclude=*.py
   - coverage run -m pytest 
 
 after_success:
