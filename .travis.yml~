@@ -6,7 +6,7 @@ cache: pypi
 
 install:
   - pip install flake8 codecov pytest pytest-cov
-  - pip intall scipy
+  - pip install scipy
 
 
 script:
