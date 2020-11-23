@@ -19,7 +19,6 @@ For SWAP rates, the first value represents the duration of the swap rate. The ot
 
 
 ![alt text](https://github.com/Naman-Goyal/Quant-paradise/blob/master/1.PNG?raw=true)
-
 The image below shows interpolation of rates between the two dates. For this example, we calibrate on half-day periods but these can be adjusted according to need and precision. 
 
 ![alt text](https://github.com/Naman-Goyal/Quant-paradise/blob/master/2.PNG?raw=true)
