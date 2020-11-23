@@ -18,18 +18,18 @@ The second value represents the value of that interest rate on the first date, a
 For SWAP rates, the first value represents the duration of the swap rate. The other two values are used in the same way as the LIBOR rates. 
 
 
-![alt text](https://github.com/Naman-Goyal/Quantparadise/blob/master/1.PNG?raw=true)
+![alt text](https://github.com/Naman-Goyal/Quant-paradise/blob/master/1.PNG?raw=true)
 
 The image below shows interpolation of rates between the two dates. For this example, we calibrate on half-day periods but these can be adjusted according to need and precision. 
 
-![alt text](https://github.com/Naman-Goyal/Quantparadise/blob/master/2.PNG?raw=true)
+![alt text](https://github.com/Naman-Goyal/Quant-paradise/blob/master/2.PNG?raw=true)
 
 Below we show examples of the graphs obtained for the Vasicek and CIR calibrations for the two dates we picked:
-![alt text](https://github.com/Naman-Goyal/Quantparadise/blob/master/VASEICK_first_date.png?raw=true)
-![alt text](https://github.com/Naman-Goyal/Quantparadise/blob/master/CIR_first_date.png?raw=true)
+![alt text](https://github.com/Naman-Goyal/Quant-paradise/blob/master/VASEICK_first_date.png?raw=true)
+![alt text](https://github.com/Naman-Goyal/Quant-paradise/blob/master/CIR_first_date.png?raw=true)
 
 Finally, we show a graph showing the price of a zero coupon bond using the above calibration. 
-![alt text](https://github.com/Naman-Goyal/Quantparadise/blob/master/CIR_results_comparison.png?raw=true)
+![alt text](https://github.com/Naman-Goyal/Quant-paradise/blob/master/CIR_results_comparison.png?raw=true)
 
 
 
