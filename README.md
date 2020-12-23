@@ -16,7 +16,7 @@ The below images show a few images screenshot from our Jupyter file which demons
 For LIBOR rates, the first value of each list represents the time period. For instance, 1/12 would represent the 1 month rate, 12/12 would represent the 1 year rate and so on. 
 The second value represents the value of that interest rate on the first date, and the third value represents the value of the interest rate for the second date. 
 
-For SWAP rates, the first value represents the duration of the swap rate. The other two values are used in the same way as the LIBOR rates. 
+For SWAP rates, the first value represents the duration of the swap rate. The other two values are used in the same way as the LIBOR rates 
 
 
 ![alt text](https://github.com/Naman-Goyal/Quant-paradise/blob/master/1.PNG?raw=true)
