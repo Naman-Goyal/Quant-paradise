@@ -5,7 +5,10 @@ python:
 cache: pypi
 
 install:
-  - pip install flake8 codecov pytest pytest-cov
+  - pip install flake8 
+  - coverage run -m pytest
+  - coverage report
+  - coverage xml
   - pip install scipy
 
 
