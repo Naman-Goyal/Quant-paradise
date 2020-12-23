@@ -28,8 +28,9 @@ df = pd.read_csv('swapLiborData.csv')
 
 # convert number to datatime format
 for i in range(df.shape[0]):
-    df.loc[i, 'Date'] = pd.to_datetime('1899-12-30') + pd.to_timedelta(df.loc[i, 'Date'], 'D')
-    
+    df.loc[i, 'Date'] = pd.to_datetime(
+        '1899-12-30') + pd.to_timedelta(df.loc[i, 'Date'], 'D')
+
 df.head(5)
 
 # # regress 5-yr against 2-yr
@@ -242,7 +243,7 @@ plt.legend(labels=['constructed 30-yr', 'original 30-yr'], loc='best')
 
 plt.show()
 
-# # regress 30-yr against 15-yr 
+# # regress 30-yr against 15-yr
 
 # In[11]:
 
@@ -327,4 +328,3 @@ plt.legend(labels=['constructed 30-yr', 'original 30-yr'], loc='best')
 plt.show()
 
 # In[ ]:
-

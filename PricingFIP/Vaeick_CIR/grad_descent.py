@@ -21,8 +21,9 @@ warnings.filterwarnings("ignore")
 df = pd.read_csv('swapLiborData.csv')
 
 for i in range(df.shape[0]):
-    df.loc[i, 'Date'] = pd.to_datetime('1899-12-30') + pd.to_timedelta(df.loc[i, 'Date'], 'D')
-    
+    df.loc[i, 'Date'] = pd.to_datetime(
+        '1899-12-30') + pd.to_timedelta(df.loc[i, 'Date'], 'D')
+
 lenT = len(df)
 
 yY = df.iloc[:lenT, 8]
@@ -39,11 +40,17 @@ a, b = np.meshgrid(a, b)
 for i in range(len1):
     for j in range(len2):
         s[j, i] = np.sum((yY - a[j, i] - b[j, i] * xX) ** 2) / (2 * lenT)
-        
+
 # #surface
 fig = plt.figure(figsize=(8, 4))
 ax = fig.gca(projection='3d')
-surf = ax.plot_surface(a, b, s, cmap=cm.coolwarm, linewidth=0, antialiased=False)
+surf = ax.plot_surface(
+    a,
+    b,
+    s,
+    cmap=cm.coolwarm,
+    linewidth=0,
+    antialiased=False)
 
 ax.zaxis.set_major_locator(matplotlib.ticker.MultipleLocator(10000))
 
