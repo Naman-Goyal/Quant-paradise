@@ -5,12 +5,12 @@ cache: pypi
 
 install:
   - pip install flake8 codecov pytest pytest-cov
+  - pip install matplotlib 
   - pip install scipy
 
 script:
   - flake8 --ignore=F405,F401,F811,F403,E501
   - coverage run -m pytest
-
 after_success:
   - codecov
   
