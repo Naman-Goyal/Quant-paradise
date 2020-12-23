@@ -5,16 +5,14 @@ python:
 cache: pypi
 
 install:
-  - pip install flake8 
-  - coverage run -m pytest
-  - coverage report
-  - coverage xml
+  - pip install flake8 codecov pytest pytest-cov
   - pip install scipy
 
 
 script:
   - flake8 --ignore=F405,F401,F811,F403,E501
-  - coverage run -m pytest 
+  - python3.7 -m pytest -vvv my_tests/ --cov=my_tests
+
 
 after_success:
   - codecov
